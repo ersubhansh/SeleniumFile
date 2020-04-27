@@ -14,10 +14,14 @@ public class GmailTesting {
         driver.findElement(By.id("identifierId")).sendKeys("subhanshcoding@gmail.com");
         Thread.sleep(3000);
         driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         driver.findElement(By.xpath("//input[@class='whsOnd zHQkBf']")).sendKeys("Vidushi1!");
         Thread.sleep(3000);
         driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();
+        Thread.sleep(8000);
+        driver.findElement(By.xpath("//span[@class='gb_Ia gbii']")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.id("gb_71")).click();
         Thread.sleep(3000);
         driver.close();
     }
