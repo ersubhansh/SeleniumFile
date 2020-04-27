@@ -18,5 +18,7 @@ public class GmailTesting {
         driver.findElement(By.xpath("//input[@class='whsOnd zHQkBf']")).sendKeys("Vidushi1!");
         Thread.sleep(3000);
         driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();
+        Thread.sleep(3000);
+        driver.close();
     }
 }
