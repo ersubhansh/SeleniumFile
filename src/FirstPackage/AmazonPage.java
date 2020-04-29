@@ -14,5 +14,9 @@ public class AmazonPage {
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Poco F1");
         Thread.sleep(3000);
         driver.findElement(By.className("nav-input")).click();
+        Thread.sleep(3000);
+        driver.findElement(By.linkText("TheGiftKart")).click();
+        driver.navigate().back();
+        driver.close();
     }
 }
