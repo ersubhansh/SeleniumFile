@@ -1,6 +1,7 @@
 package FirstPackage;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -15,6 +16,8 @@ public class AmazonPage {
         Thread.sleep(3000);
         driver.findElement(By.className("nav-input")).click();
         Thread.sleep(3000);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,300)");
         driver.findElement(By.linkText("TheGiftKart")).click();
         driver.navigate().back();
         driver.close();

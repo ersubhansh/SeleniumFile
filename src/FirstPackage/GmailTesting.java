@@ -15,6 +15,16 @@ public class GmailTesting {
         Thread.sleep(3000);
         driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();
         Thread.sleep(4000);
+        String at = driver.getTitle();
+        String et = "gmail";
+        if (at.equalsIgnoreCase(et)){
+            System.out.println("Test Successfull");
+        }
+        else
+        {
+            System.out.println("Test Failed");
+        }
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//input[@class='whsOnd zHQkBf']")).sendKeys("Vidushi1!");
         Thread.sleep(3000);
         driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();
