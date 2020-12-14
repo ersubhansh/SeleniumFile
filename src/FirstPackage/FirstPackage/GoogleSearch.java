@@ -3,6 +3,7 @@ package FirstPackage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.Keys;
 
 public class GoogleSearch {
     public static void main(String[] args) throws InterruptedException {
@@ -12,6 +13,6 @@ public class GoogleSearch {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.findElement(By.name("q")).sendKeys("Subhansh");
-        driver.findElement(By.xpath("//input[@name='btnK']")).click();
+        driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
     }
 }

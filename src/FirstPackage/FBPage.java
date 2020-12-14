@@ -24,5 +24,6 @@ class FirstScript {
         Select year_y1 = new Select(year_y);
         Thread.sleep(3000);
         year_y1.selectByValue("2000");
+
     }
 }
